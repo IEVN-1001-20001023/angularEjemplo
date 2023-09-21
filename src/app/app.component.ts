@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component({//Decorador
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
+  title = 'angularEjemplo';
+}
+
+/*
+  export class AppComponent {
   title = 'angularEjemplo';
 
   apellido='Juarez';
@@ -19,3 +25,4 @@ export class AppComponent {
     precio: 75.56
   }
 }
+*/
