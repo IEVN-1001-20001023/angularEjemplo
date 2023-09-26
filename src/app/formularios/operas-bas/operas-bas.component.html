@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-6">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Numero1</label>
+            <input type="text" [(ngModel)]='num1' class="form-control" name="num1" placeholder="Numero1">
+        </div>
+        <div class="mb-3">
+            <label for="num2" class="form-label">Numero2</label>
+            <input type="text" [(ngModel)]='num2' class="form-control" name="num2" placeholder="Numero2">
+        </div>
+
+        <div class="form-check">
+            <input (click)="sumar()" class="form-check-input" type="radio" name="RB">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Sumar
+            </label>
+          </div>
+          <div class="form-check">
+            <input (click)="restar()" class="form-check-input" type="radio" name="RB" id="Restar" [(ngModel)]='Resta'>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Restar
+            </label>
+          </div>
+          <div class="form-check">
+            <input (click)="multiplicar()"class="form-check-input" type="radio" name="RB" id="Multiplicar" [(ngModel)]='Mult'>
+            <label class="form-check-label" for="flexRadioDefault3">
+              Multiplicar
+            </label>
+          </div>
+          <div class="form-check">
+            <input (click)="dividir()" class="form-check-input" type="radio" name="RB" id="Dividir">
+            <label class="form-check-label" for="flexRadioDefault4">
+              Dividir
+            </label>
+          </div>
+
+        <div class="mb-3">
+            <button (click)="validar()" class="btn btn-primary">Calcular</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <h2>Resultado: {{resultado}}</h2>
+    </div>
+</div>
