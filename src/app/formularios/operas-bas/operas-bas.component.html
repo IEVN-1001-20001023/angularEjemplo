@@ -1,3 +1,4 @@
+<p>Calculadora</p>
 <div class="row">
     <div class="col-6">
         <div class="mb-3">
@@ -10,29 +11,25 @@
         </div>
 
         <div class="form-check">
-            <input (click)="sumar()" class="form-check-input" type="radio" name="RB">
-            <label class="form-check-label" for="flexRadioDefault1">
-              Sumar
-            </label>
-          </div>
-          <div class="form-check">
-            <input (click)="restar()" class="form-check-input" type="radio" name="RB" id="Restar" [(ngModel)]='Resta'>
-            <label class="form-check-label" for="flexRadioDefault2">
-              Restar
-            </label>
-          </div>
-          <div class="form-check">
-            <input (click)="multiplicar()"class="form-check-input" type="radio" name="RB" id="Multiplicar" [(ngModel)]='Mult'>
-            <label class="form-check-label" for="flexRadioDefault3">
-              Multiplicar
-            </label>
-          </div>
-          <div class="form-check">
-            <input (click)="dividir()" class="form-check-input" type="radio" name="RB" id="Dividir">
-            <label class="form-check-label" for="flexRadioDefault4">
-              Dividir
-            </label>
-          </div>
+          <label>
+            <input type="radio" name="opera" value="sumar" [(ngModel)]="sumar"> Sumar
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="opera" value="restar" [(ngModel)]="restar"> Restar
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="opera" value="mult" [(ngModel)]="multiplicar"> Multiplicar
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="opera" value="dividir" [(ngModel)]="dividir"> Dividir
+          </label>
+        </div>
 
         <div class="mb-3">
             <button (click)="validar()" class="btn btn-primary">Calcular</button>

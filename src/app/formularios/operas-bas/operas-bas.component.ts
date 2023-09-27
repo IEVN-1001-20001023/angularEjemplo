@@ -7,36 +7,27 @@ import { Component } from '@angular/core';
 })
 export class OperasBasComponent {
 
-  operacionSeleccionada: string = '';
-  Sumas:string='suma'
-  Resta:string='resta'
-  Mult:string='mult'
-  cuma:string='';
+  sumar: string = '';
+  restar: string ='';
+  multiplicar: string ='';
+  dividir: string ='';
   num1:string='';
   num2:string='';
   resultado:number=0;
-  RB:string='';
-  sumar():void{
-    0
-  }
-  restar():void{
-    0
-  }
-  multiplicar():void{
-    0
-  }
-  dividir():void{
-    0
-  }
+  
   validar():void{
-    if(this.Sumas){
+    if(this.sumar){
       this.resultado=parseInt(this.num1)+parseInt(this.num2);
-    }else{if(this.Resta){
+    }
+    if(this.restar){
       this.resultado=parseInt(this.num1)-parseInt(this.num2);
-    }else{if(this.Mult){
+    }
+    if(this.multiplicar){
       this.resultado=parseInt(this.num1)*parseInt(this.num2);
-    }}}
-    
+    }
+    if(this.dividir){
+      this.resultado=parseInt(this.num1)/parseInt(this.num2);
+    }
   }
 
 }
