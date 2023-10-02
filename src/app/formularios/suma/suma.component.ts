@@ -10,6 +10,6 @@ export class SumaComponent {
   num2=0;
   res=0;
   sumar(){
-    this.res=this.num1 + this.num2;
+    this.res=this.num1 + this.num2
   }
 }
